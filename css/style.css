@@ -1,0 +1,38 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #efecff;
+}
+.principal{
+    background-color:#bda0f8 ;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.izquierda{
+    width: 50%;
+}
+.derecha{
+    width: 50%;
+    display: flex;
+    justify-content: end; 
+    align-items: center;
+}
+.carrito{
+    height: 40px
+}
+
+.book-title {
+    font-weight: bold;
+  }
+  .book-genre {
+    color: #a52a2a;
+  }
+  .book-price {
+    font-weight: bold;
+  }
+  footer{
+    background-color: #bda0f8;
+    padding: 20px;
+  }
