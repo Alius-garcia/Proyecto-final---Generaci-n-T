@@ -12,6 +12,14 @@ body{
 }
 .izquierda{
     width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.izquierda h1
+{
+  margin-bottom: 0%;
+  margin-left: 4%;
 }
 .derecha{
     width: 50%;
@@ -36,3 +44,16 @@ body{
     background-color: #bda0f8;
     padding: 20px;
   }
+
+#novedades
+{
+  margin-bottom: 5vh;
+}
+
+.navbar-nav 
+{
+  width: 100%;
+  display: flex;
+justify-content: center;
+
+}
