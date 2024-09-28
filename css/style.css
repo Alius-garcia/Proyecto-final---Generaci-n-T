@@ -1,59 +1,140 @@
 body{
-    height: 100%;
-    width: 100%;
-    background-color: #efecff;
+  height: 100%;
+  width: 100%;
+  background-color: #efecff;
 }
+
 .principal{
-    background-color:#bda0f8 ;
-    color: white;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  background-color:#bda0f8 ;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
+
 .izquierda{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.izquierda h1
-{
-  margin-bottom: 0%;
-  margin-left: 4%;
+
+.izquierda h1{
+margin-bottom: 0%;
+margin-left: 4%;
 }
+
 .derecha{
-    width: 50%;
-    display: flex;
-    justify-content: end; 
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: end; 
+  align-items: center;
 }
+
 .carrito{
-    height: 40px
+  height: 40px
 }
 
 .book-title {
-    font-weight: bold;
-  }
-  .book-genre {
-    color: #a52a2a;
-  }
-  .book-price {
-    font-weight: bold;
-  }
-  footer{
-    background-color: #bda0f8;
-    padding: 20px;
-  }
+  font-weight: bold;
+}
 
+.book-genre {
+  color: #c01111;
+  width: 50%;
+}
+
+.book-price {
+  font-weight: bold;
+  width: 50%;
+}
+
+footer{
+  background-color: #bda0f8;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #6f42c1;
+}
+a:hover{
+  color: white;
+}
 #novedades
 {
-  margin-bottom: 5vh;
+margin-bottom: 5vh;
 }
 
 .navbar-nav 
 {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.secciones{
   width: 100%;
   display: flex;
-justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.part-1{
+ width: 60%;
+ height: auto;
+ margin: 10px;
+  padding: 10px;
+}
 
+.part-2{
+  width: 40%;
+  height: auto;
+}
+.lectura{
+  width: 80%;
+  border-radius: 30px;
+}
+
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../imagenes/flecha-izquierda.png);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../imagenes/pngegg.png);
+}
+
+.btn-lila-violeta {
+  background-color: #C59FF4; 
+  color: white;            
+  border: none;
+  transition: background-color 0.4s ease, transform 0.3s ease; /
+}
+
+.btn-lila-violeta:hover {
+  background-color: #8A2BE2; 
+  transform: scale(1.05); 
+}
+
+.btn-lila-violeta:active {
+  transform: scale(0.98);    
 }
