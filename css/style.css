@@ -138,3 +138,33 @@ justify-content: center;
 .btn-lila-violeta:active {
   transform: scale(0.98);    
 }
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.book-genre {
+  font-size: 1rem;
+  color: #777;
+}
+
+.book-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-img-top {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
