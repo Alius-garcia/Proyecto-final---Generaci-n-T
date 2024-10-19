@@ -1,5 +1,4 @@
 const libros = [
-    // Los datos de libros del archivo JSON
     {
 "titulo": "Nosotros en la luna",
 "autor": "Alice Kellen",
@@ -128,7 +127,6 @@ const libros = [
 "editorial":"VRYA",
 "imagen":"https://data.livriz.com/media/MediaSpace/F9AFB48D-741D-4834-B760-F59344EEFF34/45/133f0c0c-a4ab-4155-af90-cdb342153658/9789877476972.jpg"
 }
-    // Agregar el resto de los libros aquí
 ];
 
 // Función para mostrar los libros filtrados
@@ -147,7 +145,6 @@ function filtrarLibros() {
 
     mostrarLibros(librosFiltrados);
 }
-
 // Función para mostrar los libros
 function mostrarLibros(libros) {
     const container = document.getElementById('libros-container');
@@ -174,7 +171,6 @@ function mostrarLibros(libros) {
         container.innerHTML += card;
     });
 }
-
 // Cargar todos los libros al inicio
 window.onload = () => {
     mostrarLibros(libros);
