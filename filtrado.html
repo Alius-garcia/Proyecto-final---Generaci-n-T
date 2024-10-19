@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrado de Libros</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="principal">
+           <div class="izquierda">
+            <h1 class="name">PD</h1>
+           </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Filtrar Libros</h1>
+        <div class="row mb-4">
+            <div class="col-md-3 col-sm-6">
+                <select id="genero" class="form-select" onchange="filtrarLibros()">
+                    <option value="">Todos los Géneros</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Fantasia">Fantasía</option>
+                    <option value="Autoayuda">Autoayuda</option>
+                    <option value="Ficción">Ficción</option>
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <select id="editorial" class="form-select" onchange="filtrarLibros()">
+                    <option value="">Todas las Editoriales</option>
+                    <option value="Planeta">Planeta</option>
+                    <option value="Booket">Booket</option>
+                    <option value="Plaza & Janés">Plaza & Janés</option>
+                    <option value="Diana">Diana</option>
+                    <option value="VRYA">VRYA</option>
+                    <option value="Montena">Montena</option>
+                    <option value="Salamandra">Salamandra</option>
+                    <option value="Destino">Destino</option>
+                    <option value="Gaia ediciones">Gaia ediciones</option>
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <input type="number" id="precioMin" class="form-control" placeholder="Precio Mínimo" oninput="filtrarLibros()">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <input type="number" id="precioMax" class="form-control" placeholder="Precio Máximo" oninput="filtrarLibros()">
+            </div>
+        </div>
+        <div class="text-center">
+            <button onclick="filtrarLibros()">Aplicar Filtros</button>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Novedades</h2> <HR></HR>
+        <div class="row row-cols-2 row-cols-md-5 g-5" id="libros-container">
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
