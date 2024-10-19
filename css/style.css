@@ -146,7 +146,7 @@ justify-content: center;
 
 .book-genre {
   font-size: 1rem;
-  color: #777;
+  color: #d21e1e;
 }
 
 .book-price {
@@ -165,26 +165,26 @@ justify-content: center;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para pantallas entre 525px y 565px */
 @media (min-width: 525px) and (max-width: 565px) {
   .card-genre {
-      font-size: 10px; /* Ajusta el tamaño del texto del género */
+      font-size: 8px; /* Ajusta el tamaño del texto del género */
   }
   .card-price {
-      font-size: 12px; /* Ajusta el tamaño del texto del precio */
+      font-size: 10px; /* Ajusta el tamaño del texto del precio */
   }
 }
 
 /* Estilos para pantallas entre 576px y 991px */
 @media (min-width: 576px) and (max-width: 991px) {
   .card-genre {
-      font-size: 12px; /* Ajusta el tamaño del texto del género */
+      font-size: 10px; /* Ajusta el tamaño del texto del género */
   }
   .card-price {
-      font-size: 14px; /* Ajusta el tamaño del texto del precio */
+      font-size: 12px; /* Ajusta el tamaño del texto del precio */
   }
 }
