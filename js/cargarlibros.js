@@ -5,10 +5,20 @@ const librosLista = document.getElementById('libros-lista');
 fetch('libros.json')
   .then(response => response.json())
   .then(libros => {
-    libros.forEach(libro => {
+    // Crear un contenedor para filas
+    let row;
+
+    libros.forEach((libro, index) => {
+      // Crear una nueva fila cada 5 libros
+      if (index % 5 === 0) {
+        row = document.createElement('div');
+        row.classList.add('row', 'g-4', 'justify-content-center'); // Usamos la clase para centrar
+        librosLista.appendChild(row); // Agregar la fila al contenedor principal
+      }
+
       // Crear la estructura de la carta con Bootstrap usando los datos del JSON
       const card = `
-        <div class="col">
+        <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
           <div class="card h-100">
             <img src="${libro.imagen}" class="card-img-top" alt="${libro.titulo}">
             <div class="card-body d-flex flex-column justify-content-between">
@@ -21,8 +31,9 @@ fetch('libros.json')
           </div>
         </div>
       `;
-      // Insertar la carta en el contenedor
-      librosLista.innerHTML += card;
+
+      // Insertar la carta dentro de la fila actual
+      row.innerHTML += card;
     });
   })
   .catch(error => console.error('Error al cargar los libros:', error));
